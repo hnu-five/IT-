@@ -6,4 +6,4 @@ Citi training 2022 summer
  - 项目环境：VScode
 
 ## start
-使用命令行 $npm start$ 启动
+使用命令行 'npm start' 启动
