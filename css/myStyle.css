@@ -1,0 +1,194 @@
+/* 
+    box-sizing: border-box; 
+    width 包含 padding 和 border
+*/
+
+body {
+    background-color: #10161d;
+    padding: 40px, 60px;
+}
+
+.trade-type {
+    display: flex;
+    background-color: rgba(61, 86, 111, 0.4);
+    width: 262px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.trade-type-item {
+    width: 140px;
+    padding: 5px 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #88aff8;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.trade-type-item.active {
+    color: #19232e;
+    background-color: #e9eef3;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
+
+.trade-input-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trade-input-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.trade-input-title {
+    font-size: 12px;
+    color: #d9e2ea;
+}
+
+.trade-input {
+    box-sizing: border-box;
+    height: 32px;
+    width: 160px;
+    color: #ffffff;
+    border: 1px solid #46637f;
+    border-radius: 4px;
+    background-color: #17202a;
+}
+
+.trade-submit-btns {
+    display: flex;
+    flex-shrink: 0;
+    margin-left: -4px;
+}
+
+.trade-btn {
+    width: 80px;
+    height: 32px;
+    color: #000000;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    margin-left: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.trade-btn.trade-buy {
+    background-color: #00b755;
+}
+
+.trade-btn.trade-sell {
+    background-color: #ffcd00;
+}
+
+.trade-btn.nlp {
+    background-color: mediumblue;
+    color: aliceblue;
+}
+
+.horizon-line {
+    box-sizing: border-box;
+    height: 1px;
+    border: 1px solid #2b3d4e;
+    margin: 20px 0 30px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.time-group {
+    display: flex;
+    background-color: rgba(61, 86, 111, 0.4);
+    width: 328px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.time-item {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #80aff8;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.time-item.active {
+    color: #19232e;
+    background-color: #e9eef3;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
+
+.time-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    box-sizing: border-box;
+    width: 1px;
+    height: 16px;
+    border: 1px solid #34495f;
+}
+
+.time-item.active::before {
+    border: 0;
+}
+
+.data-table {
+    color: #d9e2ea;
+    background-color: #17202a;
+}
+
+th {
+    background-color: #2b3d4e;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #46637f;
+    text-align: left;
+    width: 150px;
+    height: 37px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.data-summary {
+    color: aliceblue;
+    margin-left: 4px;
+
+}
+
+.label-green {
+    color: limegreen;
+}
+
+.label-red {
+    color: orangered;
+}
+
+.label-grey {
+    color: paleturquoise;
+}
+
+.label-blue {
+    color: cornflowerblue;
+}
