@@ -1,0 +1,245 @@
+body {
+    background-color: #10161D;
+    padding: 40px 60px;
+    font-family: "sans-serif";
+    display: block;
+    margin: 8px;
+}
+
+.trade-type {
+    background-color: rgba(61, 86, 111, 0.4);
+    height: 32px;
+    width: 241px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.trade-type-item {
+    /* width: 140px; */
+    padding: 5px 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #80aff8;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.trade-type-item.active {
+    color: #19232E;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    background-color: #E9EEF3;
+}
+
+.trade-type-item:last-child {
+    width: 99px;
+}
+
+.init-hidden {
+    display: none;
+}
+
+.trade-section {
+    display: flex;
+    align-items: flex-end;
+}
+
+.trade-input-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trade-input-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.trade-input-title {
+    font-size: 12px;
+    color: #d9e2ea;
+}
+
+.trade-input {
+    box-sizing: border-box;
+    height: 32px;
+    width: 160px;
+    color: #FFFFFF;
+    border: 1px solid #46637F;
+    border-radius: 4px;
+    background-color: #17202a;
+}
+
+.nlp-input {
+    box-sizing: border-box;
+    height: 32px;
+    width: 300px;
+    color: #ffffff;
+    border: 1px solid #46637f;
+    border-radius: 4px;
+    background-color: #17202a;
+}
+
+.trade-submit-btns {
+    display: flex;
+}
+
+.trade-btn {
+    width: 80px;
+    height: 32px;
+    color: #000000;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.trade-buy {
+    background-color: #00B755;
+}
+
+.trade-sell {
+    background-color: #FACD19;
+}
+
+.button-nlp {
+    width: 80px;
+    height: 32px;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #015ea7;
+}
+
+.sperate-line {
+    height: 1px;
+    margin: 20px 0 30px 0;
+    box-sizing: border-box;
+    border-top: 1px solid #2b3d4e;
+}
+
+.fre-group {
+    background-color: rgba(61, 86, 111, 0.4);
+    height: 32px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.fre-item {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #80aff8;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.fre-item.active {
+    color: #19232E;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    background-color: #E9EEF3;
+}
+
+.fre-item:first-child::before,
+.fre-item.active::before,
+.fre-item.active+.fre-item::before {
+    display: none;
+}
+
+.data-table {
+    background-color: #17202a;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    color: #d9e2ea;
+    font-size: 12px;
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+th {
+    background-color: #2B3D4E;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #46637F;
+    text-align: left;
+    width: 150px;
+    height: 37px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.data-red {
+    color: #ff7a75;
+}
+
+.data-green {
+    color: #00ea6c;
+}
+
+.data-summary {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    height: 36px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.total-buy {
+    color: #00ea6c;
+}
+
+.total-sell {
+    color: #ff7a75;
+}
+
+.total-net {
+    color: #97AFC6;
+}
+
+.data {
+    padding-right: 20px;
+}
+
+.flow-analysis {
+    margin-top: 40px;
+    background-color: #17202a;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px #000000;
+}
+
+.flow-tip {
+    padding: 10px 0 0 10px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
