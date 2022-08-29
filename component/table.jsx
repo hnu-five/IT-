@@ -18,7 +18,7 @@ export default function Table(props) {
                         <th>Price</th>
                         <th>Notional USD</th>
                         <th>Currency</th>
-                        <th>Issuer Sector</th>
+                        <th>Issuing Company</th>
                         <th>Salesperson</th>
                         <th>HT/PT</th>
                     </tr>
@@ -36,7 +36,7 @@ export default function Table(props) {
                                 <td>{item.price}</td>
                                 <td>{item.notional} USD</td>
                                 <td>{item.currency}</td>
-                                <td>{item.sector}</td>
+                                <td>{item.company}</td>
                                 <td>{item.salesperson}</td>
                                 <td>{item.hp}</td>
                             </tr>

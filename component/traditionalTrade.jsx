@@ -11,7 +11,7 @@ export default function TraditionalTrade(props){
             'size' : '',
             'price' : '',
             'currency' : '',
-            'sector' : '',
+            'company' : '',
             'salesperson' : '',
             'hp' : 'HT',
             'flag' : ''
@@ -49,7 +49,7 @@ export default function TraditionalTrade(props){
             <TradeInput type="input" label="Size" tradePost={tradePost} setTradePost={setTradePost}/>
             <TradeInput type="input" label="Price" tradePost={tradePost} setTradePost={setTradePost}/>
             <TradeInput type="input" label="Currency" tradePost={tradePost} setTradePost={setTradePost}/>
-            <TradeInput type="input" label="Issue Sector" tradePost={tradePost} setTradePost={setTradePost}/>
+            <TradeInput type="input" label="Issuing Company" tradePost={tradePost} setTradePost={setTradePost}/>
             <TradeInput type="input" label="Salesperson" tradePost={tradePost} setTradePost={setTradePost}/>
             <TradeInput type="select" label="HT/PT" options={["HT","PT"]} tradePost={tradePost} setTradePost={setTradePost}/>
         </div>

@@ -10,11 +10,11 @@ export default function Chart(props){
             backgroundColor: '#10161D',
             style: {
                 fontFamily: "sans-serif",
-                fontSize: '12px'
+                fontSize: '12px',
             }
         },
         title: {
-            text: 'Flow Analysis',
+            text: 'Flow Analysis(流动曲线分析)',
             align:"left",
             style: {
                 fontFamily: "sans-serif",
@@ -24,7 +24,6 @@ export default function Chart(props){
         xAxis: {
             gridLineColor: '#17202A',
             gridLineWidth: 1,
-            //数据1
             categories: chartData.chartDate,
         },
         yAxis: {
@@ -49,10 +48,7 @@ export default function Chart(props){
             stacking: 'normal',
             borderWidth: 0,
             dataLabels: {
-                //enabled: true,
-                // color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
                 style: {
-                    // 如果不需要数据标签阴影，可以将 textOutline 设置为 'none'
                     textOutline: '1px 1px black',
                     fontFamily: "sans-serif",
                 }
@@ -62,14 +58,12 @@ export default function Chart(props){
         series: [
             {
                 name: 'Buy',
-                //数据2
                 data: chartData.chartBuy,
                 color:"#00B0B9",
                 showInLegend: false
             },
             {
                 name: 'Sell',
-                //数据3
                 data: chartData.chartSell,
                 color:"#06848D",
                 showInLegend: false
@@ -77,7 +71,6 @@ export default function Chart(props){
             {
                 name: 'Cumulative Net',
                 type : 'line',
-                //数据4
                 data: chartData.chartTotal,
                 color:"rgb(248, 140, 0)",
                 showInLegend: true

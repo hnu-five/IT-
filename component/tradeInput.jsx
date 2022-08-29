@@ -24,8 +24,8 @@ export default function TradeInput(props){
             case 'Currency':
                 tradePost.currency = val
                 break
-            case 'Issue Sector':
-                tradePost.sector = val
+            case 'Issuing Company':
+                tradePost.company = val
                 break
             case 'Salesperson':
                 tradePost.salesperson = val

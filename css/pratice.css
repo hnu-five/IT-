@@ -1,10 +1,10 @@
 body{
-    background-color:#10161D;
+    background-color:#1c242d;
     padding: 40px 60px;
     font-family: sans-serif;
 }
 .trade-type{
-    background-color: rgba(61, 86, 111, 0.4);
+    background-color: rgba(41, 93, 146, 0.4);
     height: 32px;
     width: 241px;
     display: flex;
@@ -15,29 +15,31 @@ body{
 }
 .trade-nlp{
     align-items: flex-end;
+    display: flex;
 }
 .trade-go{
-    background-color: rgb(27, 127, 241);
+    background-color: rgb(15, 122, 246);
 }
 .trade-traditional{
     display: flex;
     align-items: flex-end;
 }
 .trade-type-item.active{
-    color: #19232E;
-    border: 1px solid rgba(255, 255, 255, 0);
+    color: #172330;
     border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0);
     background-color: #E9EEF3;
+    text-align: center;
 }
 .trade-type-item:last-child{
-    width: 99px;
+    width: 100px;
 }
 .trade-type-item{
-    width: 140px;
+    width: 150px;
     padding: 5px 18px;
     text-align: center;
     font-size: 12px;
-    color: #80AFF8;
+    color: #69d0fc;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -50,15 +52,15 @@ body{
     margin-bottom: 10px;
 }
 .trade-input-title{
-    font-size: 12px;
+    font-size: 14px;
     color: #D9E2EA;
 }
 .trade-input{
     box-sizing: border-box;
     height: 32px;
     width: 160px;
-    color: #FFFFFF;
-    border: 1px solid #46637F;
+    color: #faf0f0;
+    border: 1px solid #3e6284;
     border-radius: 4px;
     background-color: #17202A;
 }
@@ -78,10 +80,10 @@ body{
     margin-bottom: 10px;
 }
 .trade-buy{
-    background-color: rgb(22, 235, 22);
+    background-color: rgb(10, 252, 10);
 }
 .trade-sell{
-    background-color: #FFCD00;
+    background-color: #f5fd10;
 }
 .sperate-line{
     height: 1px;
@@ -132,27 +134,29 @@ body{
 }
 .data-table{
     background-color: #17202A;
+    text-align: center;
 }
 table{
     border-collapse: collapse;
-    color: #D9E2EA;
-    font-size: 12px;
+    color: #aeb5bc;
+    font-size: 14px;
+    text-align: center;
 }
 th{
-    background-color: #2B3D4E;
+    background-color: #91b5d8;
     font-weight: bold;
+    text-align: center;
+    color: #000;
 }
 td,th{
-    border: 1px solid #46637F;
+    border: 1px solid #0481f6;
     text-align: left;
     width: 150px;
     height: 37px;
     padding: 8px;
     box-sizing: border-box;
 }
-.data-summary{
-    
-}
+
 .summary-items{
     display: flex;
     justify-content: space-between;
@@ -163,23 +167,23 @@ td,th{
     color: #FFFFFF;
 }
 .total-buy{
-    color: #00EA6C;
+    color: #fd4a08;
 }
 .total-sell{
-    color: #FF7A75;
+    color: #fc8d1d;
 }
 .net-quantity{
-    color: #97AFC6;
+    color: #d2fa2e;
 }
 .total-buy-notional{
-    color:#00EA6C;
+    color:#05b740;
 }
 .total-sell-notional{
-    color: #FF7A75;
+    color: #6bb7f6;
 }
 .net-notional{
-    color: #97AFC6;
+    color: #b997c6;
 }
 .records{
-    color:#80AFF8;
+    color:#f10879;
 }
