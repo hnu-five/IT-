@@ -1,0 +1,25 @@
+{
+    "value": [
+        {
+            "date":"6-8-2022",
+            "clientName":"clientName",
+            "clientSide":"Buy",
+            "ticker":"ticker",
+            "ric":"ric",
+            "size":"size",
+            "price":"price",
+            "notional":"notional",
+            "currency":"currency",
+            "sector":"sector",
+            "salesperson":"salesperson",
+            "hp":"hp"
+        }
+    ],
+
+    "totalBuy":1300,
+    "totalSell":1300,
+    "quantity":1300,
+    "buyNotional":1300,
+    "sellNotional":1300,
+    "netNotional":1300
+}
