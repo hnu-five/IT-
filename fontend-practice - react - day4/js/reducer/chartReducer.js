@@ -1,9 +1,9 @@
 import { createSlice,createAsyncThunk } from '@reduxjs/toolkit'
 
 export const fetchChartData = createAsyncThunk('chart/fetch', async (fre, {dispatch}) => {
-    const response = await fetch(`../../chartData/${fre}.json`)
+    //const response = await fetch(`../../chartData/${fre}.json`)
     //加入接口
-    //const response = await fetch(`http://127.0.0.1:8081/history/${fre}`)
+    const response = await fetch(`http://121.37.66.218:8081/history/${fre}`)
     let data = {data: [], chart: {}}
     if (response.ok) {
         data = await response.json()

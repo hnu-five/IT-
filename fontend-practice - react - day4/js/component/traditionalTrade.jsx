@@ -29,18 +29,16 @@ export default function TraditionalTrade(props) {
         {
             alert("请检查输入是否完整！")
         } else {
-            fetch(`http://localhost:8081/transaction_records`,{
+            //console.log(tradeData)
+            fetch(`http://121.37.66.218:8081/transaction_records`,{
                 method: 'POST',
                 headers: new Headers({
                     'Content-Type': 'application/json'
                 }),
                 body: JSON.stringify(tradeData)
-            }).then(res => {
-                if(res.ok){
-                    data = res.json()
-                    alert(data.message)
-                    return data
-                }
+            }).then(res => res.json()).then(data => {
+                alert(data.message)
+                console.log(data)
             })
         }
         }

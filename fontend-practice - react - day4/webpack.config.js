@@ -20,7 +20,7 @@ module.exports = {
             '/': {
                 target: 'http://localhost:5500',
             },
-        },
+        }, 
     },
     watchOptions: {
         aggregateTimeout:300,
