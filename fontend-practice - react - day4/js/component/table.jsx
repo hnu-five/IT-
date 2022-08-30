@@ -2,8 +2,10 @@ import React from 'react'
 import SummaryItem from './summaryItem'
 
 export default function Table(props) {
-    const tableData = props.tableData ?.value || []
-    const summary = props.tableData || {}
+    const tableData = props.tableData.data.list || []
+    const summary = props.tableData.data || {}
+
+    console.log(tableData)
 
     return <div className="data-table">
         <table>
@@ -26,33 +28,42 @@ export default function Table(props) {
                 <tbody>
                     {
                         tableData.map((item,index) => {
-                            return <tr key={index}>
+                            return (
+                                <tr key={index}>
                                 <td>{item.date}</td>
-                                <td>{item.clientName}</td>
-                                <td>{item.clientSide}</td>
+                                <td>{item.client_name}</td>
+                                <td className={item.client_side == "buy" ? "total-buy":"total-sell"}>{item.client_side}</td>
                                 <td>{item.ticker}</td>
                                 <td>{item.ric}</td>
-                                <td>{item.size}</td>
+                                <td className={item.client_side == "buy" ? "total-buy":"total-sell"}>{item.size}</td>
                                 <td>{item.price}</td>
-                                <td>{item.notional} USD</td>
+                                <td>{item.notional_usd} USD</td>
                                 <td>{item.currency}</td>
-                                <td>{item.sector}</td>
+                                <td>{item.issuer_sector}</td>
                                 <td>{item.salesperson}</td>
-                                <td>{item.hp}</td>
+                                <td>{item.ht_pt == 1 ? 'HT' : 'PT'}</td>
                             </tr>
+                            );
                         })
                     }
                 </tbody>
         </table>
         <div className="data-summary">
             <div className="summary-items">
-                <SummaryItem label="Total Buy" value={summary.totalBuy} className='total-buy'/>
+                {/* <SummaryItem label="Total Buy" value={summary.totalBuy} className='total-buy'/>
                 <SummaryItem label="Total Sell" value={summary.totalSell} className='total-sell'/>
                 <SummaryItem label="Net Quantity" value={summary.quantity} className='net-quantity'/>
                 <SummaryItem label="Total Buy Notional" value={summary.buyNotional} className='total-buy-notional'/>
                 <SummaryItem label="Total Sell Notional" value={summary.sellNotional} className='total-sell-notional'/>
                 <SummaryItem label="Net Notional" value={summary.netNotional} className='net-notional'/>   
-                <SummaryItem label="Total Records" value={tableData.length} className='records'/>        
+                <SummaryItem label="Total Records" value={tableData.length} className='records'/>  */}   
+                <SummaryItem label="Total Buy" value={summary.total_buy} className='total-buy'/>
+                <SummaryItem label="Total Sell" value={summary.total_sell} className='total-sell'/>
+                <SummaryItem label="Net Quantity" value={summary.quantity} className='net-quantity'/>
+                <SummaryItem label="Total Buy Notional" value={summary.buy_notional} className='total-buy-notional'/>
+                <SummaryItem label="Total Sell Notional" value={summary.sell_notional} className='total-sell-notional'/>
+                <SummaryItem label="Net Notional" value={summary.net_notional} className='net-notional'/>   
+                <SummaryItem label="Total Records" value={tableData.length} className='records'/>   
             </div>
               
         </div>

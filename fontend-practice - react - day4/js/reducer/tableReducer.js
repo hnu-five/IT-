@@ -2,8 +2,10 @@ import { createSlice,createAsyncThunk } from '@reduxjs/toolkit'
 
 export const fetchTableData = createAsyncThunk('table/fetch', async (fre, {dispatch}) => {
     const response = await fetch(`../../data/${fre}.json`)
-
-    let data = {value: [], chart: {}}
+    //加入接口
+    //const response = await fetch(`http://127.0.0.1:8081/transaction_records/summary/${fre}`)
+    //let data = {value: [], chart: {}}
+    let data = { data: {} }
     if (response.ok) {
         data = await response.json()
     }
@@ -14,7 +16,8 @@ export const fetchTableData = createAsyncThunk('table/fetch', async (fre, {dispa
 
 const tableReducer = createSlice({
     name:'table',
-    initialState:{data:{value: []},loading:false},
+   // initialState:{data:{value: []},loading:false},
+    initialState:{data:{data: {}},loading:false},
     reducers: {
         setTableData(state,action) {
             state.data = action.payload
