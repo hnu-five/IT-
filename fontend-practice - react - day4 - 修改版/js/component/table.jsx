@@ -1,9 +1,14 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import SummaryItem from './summaryItem'
 
 export default function Table(props) {
+
     const tableData = props.tableData.data.list || []
     const summary = props.tableData.data || {}
+    //const data = useSelector(state => state.table.data)  
+    //const tableData = tableData.data.list || []
+    //const summary = tableData.data || {}
 
     console.log(tableData)
 

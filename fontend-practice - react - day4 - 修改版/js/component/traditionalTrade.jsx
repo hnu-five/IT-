@@ -18,13 +18,14 @@ export default function TraditionalTrade(props) {
             'ht_pt' : '1',
         }
     )
-    
-    const priceEl = document.querySelector('#Price')
+
+   /*  const priceEl = document.querySelector('#Price')
     const currencyEl = document.querySelector('#Currency')
     const tickerEl = document.querySelector('#Ticker')
     priceEl.readOnly = true
     currencyEl.readOnly = true
-    tickerEl.readOnly = true
+    tickerEl.readOnly = true 
+ */
 
     function onClickHandler(evt) {
         const tradeE1 = evt.target.className
@@ -82,11 +83,11 @@ export default function TraditionalTrade(props) {
     return <div className="trade-traditional">
         <div className="trade-input-items">
             <TradeInput type="input" label="Client Name" tradeData={tradeData} setTradeData={setTradeData} />
-            <TradeInput type="input" label="Ticker" tradeData={tradeData} setTradeData={setTradeData}/>
+            <TradeInput type="input" label="Ticker" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="RIC" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Size" tradeData={tradeData} setTradeData={setTradeData}/>
-            <TradeInput type="input" label="Price" tradeData={tradeData} setTradeData={setTradeData}/>
-            <TradeInput type="input" label="Currency" tradeData={tradeData} setTradeData={setTradeData}/>
+            <TradeInput type="input" label="Price" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
+            <TradeInput type="input" label="Currency" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Issue Sector" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Salesperson" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="select" label="HT/PT" options={["HT","PT"]} tradeData={tradeData} setTradeData={setTradeData}/>

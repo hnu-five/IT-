@@ -4,8 +4,7 @@ export default function TradeInput(props) {
     let tradeData = props.tradeData
     let setTradeData = props.setTradeData 
 
-
-
+   
     function inputChange(e){
         const val = e.target.value
         switch(props.label){
@@ -48,7 +47,7 @@ export default function TradeInput(props) {
     return <>{props.type == 'input' ?
                 (<div className="trade-input-item">
                     <div className="trade-input-title">{props.label}</div>
-                    <input id={props.label} className="trade-input" placeholder="text input" onChange={inputChange}/>
+                    <input id={props.label} className="trade-input" placeholder="text input" readOnly={props.readOnly} onChange={inputChange}/>
                 </div>) : 
                 (<div>
                     <div className="trade-input-title">{props.label}</div>
