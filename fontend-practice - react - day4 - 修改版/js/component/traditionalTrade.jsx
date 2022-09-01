@@ -13,19 +13,12 @@ export default function TraditionalTrade(props) {
             'size' : '',
             'price' : '',
             'currency' : '',
-            'issuer_sector' : '',
+            'issuer_sector' : 'NYSE',
             'salesperson' : '',
             'ht_pt' : '1',
         }
     )
 
-   /*  const priceEl = document.querySelector('#Price')
-    const currencyEl = document.querySelector('#Currency')
-    const tickerEl = document.querySelector('#Ticker')
-    priceEl.readOnly = true
-    currencyEl.readOnly = true
-    tickerEl.readOnly = true 
- */
 
     function onClickHandler(evt) {
         const tradeE1 = evt.target.className
@@ -59,7 +52,7 @@ export default function TraditionalTrade(props) {
             }           
            
 
-        if(tradeData.client_name == ''||tradeData.client_side == ''||tradeData.currency == ''||tradeData.ticker == ''||tradeData.ric == ''||tradeData.size == ''||tradeData.price == ''||tradeData.issuer_sector == ''||tradeData.salesperson == '') 
+        if(tradeData.client_name == ''||tradeData.client_side == ''||tradeData.currency == ''||tradeData.ticker == ''||tradeData.ric == ''||tradeData.size == ''||tradeData.price == ''||tradeData.salesperson == ''||tradeData.issuer_sector == '') 
         {
             alert("请检查输入是否完整！")
         } else {
@@ -88,7 +81,7 @@ export default function TraditionalTrade(props) {
             <TradeInput type="input" label="Size" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Price" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Currency" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
-            <TradeInput type="input" label="Issue Sector" tradeData={tradeData} setTradeData={setTradeData}/>
+            <TradeInput type="select" label="Issue Sector" options={["NYSE","NASDAQ","LSE","FESE","HKEx","SHSE","ASX","FWB"]} tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Salesperson" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="select" label="HT/PT" options={["HT","PT"]} tradeData={tradeData} setTradeData={setTradeData}/>
         </div>
