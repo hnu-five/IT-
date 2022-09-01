@@ -4,6 +4,8 @@ export default function TradeInput(props) {
     let tradeData = props.tradeData
     let setTradeData = props.setTradeData 
 
+
+
     function inputChange(e){
         const val = e.target.value
         switch(props.label){

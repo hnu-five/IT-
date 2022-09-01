@@ -18,6 +18,13 @@ export default function TraditionalTrade(props) {
             'ht_pt' : '1',
         }
     )
+    
+    const priceEl = document.querySelector('#Price')
+    const currencyEl = document.querySelector('#Currency')
+    const tickerEl = document.querySelector('#Ticker')
+    priceEl.readOnly = true
+    currencyEl.readOnly = true
+    tickerEl.readOnly = true
 
     function onClickHandler(evt) {
         const tradeE1 = evt.target.className
@@ -37,10 +44,13 @@ export default function TraditionalTrade(props) {
                     console.log(data)
                     const priceEl = document.querySelector('#Price')
                     const currencyEl = document.querySelector('#Currency')
+                    const tickerEl = document.querySelector('#Ticker')
                     priceEl.value = data.data.price
                     currencyEl.value = data.data.currency_name
+                    tickerEl.value = data.data.shares_name
                     tradeData.price = data.data.price
                     tradeData.currency = data.data.currency_name
+                    tradeData.ticker = data.data.shares_name
                 })
                 return 
             }
