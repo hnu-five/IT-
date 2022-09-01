@@ -23,7 +23,7 @@ export default function ChartView(props) {
         for(var i in chartData) {
             xValues.push(chartData[i].date)
             buyValues.push(chartData[i].buy)
-            sellValues.push(chartData[i].sell)
+            sellValues.push(-chartData[i].sell)
             cumulative.push(chartData[i].cumulative_net)
         }
 

@@ -6,9 +6,9 @@ export default function Table(props) {
 
     const tableData = props.tableData.data.list || []
     const summary = props.tableData.data || {}
-    //const data = useSelector(state => state.table.data)  
-    //const tableData = tableData.data.list || []
-    //const summary = tableData.data || {}
+    /* const data = useSelector(state => state.table.data)  
+    const tableData = data.data.list || []
+    const summary = data.data || {} */
 
     console.log(tableData)
 
