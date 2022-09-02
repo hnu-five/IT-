@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/trade.css">
+    <link rel="stylesheet" href="./css/frequency.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <style type="text/css">
+        body{
+                background-color: #10161D;
+                padding: 40px 60px;
+                font-family: "sabs-serif";
+            }
+    </style>
+</head>
+<body>
+    <div class="trade-type">
+        <div data-value="traditional"  class="trade-type-item active">Traditional Trade</div>
+        <div data-value="nlp"  class="trade-type-item">NLP Trade</div>
+    </div>
+    <div class="trade-traditional" style="display: flex;">
+        <div class="trade-input-items">
+            <div class="trade-input-item">
+                <div class="trade-input-title">Client Name</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">Ticker</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">RIC</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">Size</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">Price</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">Currency</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">Issue Sector</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div class="trade-input-item">
+                <div class="trade-input-title">Salesperson</div>
+                <input class="trade-input" placeholder="text input">
+            </div>
+            <div>
+                <div class="trade-input-title">HT/PT</div>
+                <select class="trade-input">
+                    <option  value="HT">HT</option>
+                    <option  value="PT">PT</option>
+                </select>
+            </div>
+        </div>
+        <div class="trade-submit-btns">
+            <button class="trade-btn trade-buy">Buy</button>
+            <button class="trade-btn trade-sell">Sell</button>
+        </div>
+    </div>
+
+    <div class="trade-nlp" style="display: none;">
+        <div class="trade-input-item">
+            <div class="trade-input-title" >NLP Trade</div>
+            <input class="trade-input" placeholder="text input" style="width: 320px;">
+        </div>
+        <div class="trade-submit-btns">
+            <button class="trade-btn trade-go">Go</button>
+        </div>
+    </div>
+
+    <div class="sperate-line"></div>
+
+    <div class="fre-group">
+        <span class="fre-item active">1D</span>
+        <span class="fre-item">1W</span>
+        <span class="fre-item">2W</span>
+        <span class="fre-item">1M</span>
+        <span class="fre-item">3M</span>
+        <span class="fre-item">6M</span>
+        <span class="fre-item">1Y</span>
+        <span class="fre-item">YTD</span>
+    </div>
+
+    <div class="data-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Client Name</th>
+                    <th>Client Size</th>
+                    <th>Ticker</th>
+                    <th>RIC</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Notional USD</th>
+                    <th>Currency</th>
+                    <th>Issue Sector</th>
+                    <th>Salesperson</th>
+                    <th>HT/PT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Date</td>
+                    <td>Client Name</td>
+                    <td>Client Size</td>
+                    <td>Ticker</td>
+                    <td>RIC</td>
+                    <td>Size</td>
+                    <td>Price</td>
+                    <td>Notional USD</td>
+                    <td>Currency</td>
+                    <td>Issue Sector</td>
+                    <td>Salesperson</td>
+                    <td>HT/PT</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>Client Name</td>
+                    <td>Client Size</td>
+                    <td>Ticker</td>
+                    <td>RIC</td>
+                    <td>Size</td>
+                    <td>Price</td>
+                    <td>Notional USD</td>
+                    <td>Currency</td>
+                    <td>Issue Sector</td>
+                    <td>Salesperson</td>
+                    <td>HT/PT</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>Client Name</td>
+                    <td>Client Size</td>
+                    <td>Ticker</td>
+                    <td>RIC</td>
+                    <td>Size</td>
+                    <td>Price</td>
+                    <td>Notional USD</td>
+                    <td>Currency</td>
+                    <td>Issue Sector</td>
+                    <td>Salesperson</td>
+                    <td>HT/PT</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="data-summary">
+            <div class="summary-items">
+                <span>
+                    <label class="total-buy">Total Buy:</label>
+                    <span>1,300.26</span>
+                </span>
+                <span>
+                    <label class="total-sell">Total Sell:</label>
+                    <span>7,291.56</span>
+                </span>
+                <span>
+                    <label class="net-quantity">Net Quantity:</label>
+                    <span>-5,991.3</span>
+                </span>
+                <span>
+                    <label class="total-buy-notional">Total Buy Notional:</label>
+                    <span>1,038.498</span>
+                </span>
+                <span>
+                    <label class="total-sell-notional">Total Sell Notional:</label>
+                    <span>7,291.56</span>
+                </span>
+                <span>
+                    <label class="net-notional">Net Notional:</label>
+                    <span>-5,991.3</span>
+                </span>
+            </div>
+        </div>
+    </div>
+   <script type="module" src="./js/practise.js"></script>
+</body>
+</html>
