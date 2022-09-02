@@ -35,7 +35,6 @@ export default function App(props) {
     },[fre]) */
 
     function selectFre(fre) {
-        //setFre(fre)
         dispatch(setFrequency(fre))
         dispatch(fetchTableData(fre))
         dispatch(fetchChartData(fre))

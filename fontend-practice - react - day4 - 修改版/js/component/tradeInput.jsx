@@ -47,7 +47,7 @@ export default function TradeInput(props) {
     return <>{props.type == 'input' ?
                 (<div className="trade-input-item">
                     <div className="trade-input-title">{props.label}</div>
-                    <input id={props.label} className="trade-input" placeholder="text input" readOnly={props.readOnly} onChange={inputChange}/>
+                    <input type={props.number} id={props.label} className="trade-input" placeholder="text input" readOnly={props.readOnly} Oninput={props.Oninput} onChange={inputChange}/>
                 </div>) : 
                 (<div className="trade-input-item">
                     <div className="trade-input-title">{props.label}</div>

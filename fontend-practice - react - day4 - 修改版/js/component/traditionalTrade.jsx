@@ -78,7 +78,7 @@ export default function TraditionalTrade(props) {
             <TradeInput type="input" label="Client Name" tradeData={tradeData} setTradeData={setTradeData} />
             <TradeInput type="input" label="Ticker" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="RIC" tradeData={tradeData} setTradeData={setTradeData}/>
-            <TradeInput type="input" label="Size" tradeData={tradeData} setTradeData={setTradeData}/>
+            <TradeInput type="input" label="Size" number="number" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Price" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="input" label="Currency" readOnly="readOnly" tradeData={tradeData} setTradeData={setTradeData}/>
             <TradeInput type="select" label="Issue Sector" options={["NYSE","NASDAQ","LSE","FESE","HKEx","SHSE","ASX","FWB"]} tradeData={tradeData} setTradeData={setTradeData}/>
